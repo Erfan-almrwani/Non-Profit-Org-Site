@@ -1,0 +1,28 @@
+/* css/style.css */
+/* CSS Variables for Theme Switching */
+:root {
+  --primary-color: #166088;
+  --secondary-color: #4a6fa5;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --font-size-sm: clamp(0.8rem, 1.5vw, 1rem);
+  --font-size-md: clamp(1rem, 2vw, 1.2rem);
+  --font-size-lg: clamp(1.5rem, 3vw, 2rem);
+  --font-size-xl: clamp(2rem, 4vw, 2.5rem);
+}
+
+
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  
+}
