@@ -15,8 +15,30 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <h1>مرحبًا بكم في منظمتنا</h1>
+<header>
+  <div class="container header-container">
+    <a href="index.html" aria-label="الرئيسية">
+      <div class="logo" role="img" aria-label="شعار مؤسسة لاجل الجميع التنموية">FAF Logo</div>
+    </a>
+    
+    <button class="mobile-menu-btn" aria-label="قائمة التنقل" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="projects.html">المشاريع</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
+    
+    <div class="header-controls">
+      <button id="theme-toggle" aria-label="تبديل الثيم"><i class="fas fa-moon"></i></button>
+    </div>
+  </div>
   </header>
 
   <!-- Hero Section -->
