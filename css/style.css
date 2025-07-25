@@ -41,10 +41,9 @@
 }
 
 body {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
-  
 }
 a {
   text-decoration: none;
@@ -59,6 +58,22 @@ img {
   max-width: 100%;
 }
 
+/* Accessibility Focus Styles */
+:focus {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 /* Layout Utilities */
 .container {
@@ -138,7 +153,8 @@ header {
   gap: var(--spacing-sm);
 }
 
-#theme-toggle, #lang-toggle {
+#theme-toggle,
+#lang-toggle {
   background: none;
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius);
@@ -148,7 +164,8 @@ header {
   transition: var(--transition);
 }
 
-#theme-toggle:hover, #lang-toggle:hover {
+#theme-toggle:hover,
+#lang-toggle:hover {
   background-color: var(--primary-color);
   color: white;
 }
@@ -165,7 +182,8 @@ header {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070");
   background-size: cover;
   background-position: center;
   color: white;
@@ -192,7 +210,8 @@ header {
 
 /* Page Banner */
 .page-banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Cholera Ravages Yemen (1).jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Cholera Ravages Yemen (1).jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -224,7 +243,7 @@ header {
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -240,7 +259,9 @@ header {
   gap: var(--spacing-md);
 }
 
-.vision-card, .mission-card, .values-card {
+.vision-card,
+.mission-card,
+.values-card {
   background-color: var(--card-bg);
   padding: var(--spacing-md);
   border-radius: var(--border-radius);
@@ -248,7 +269,9 @@ header {
   transition: var(--transition);
 }
 
-.vision-card:hover, .mission-card:hover, .values-card:hover {
+.vision-card:hover,
+.mission-card:hover,
+.values-card:hover {
   transform: translateY(-10px);
 }
 
@@ -262,7 +285,7 @@ header {
 }
 
 .values-card li::before {
-  content: '✓';
+  content: "✓";
   color: var(--primary-color);
   margin-left: var(--spacing-xs);
 }
@@ -528,7 +551,7 @@ header {
 }
 
 .toast.success {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .toast.error {
@@ -545,7 +568,7 @@ header {
   .mobile-menu-btn {
     display: block;
   }
-  
+
   .nav-menu {
     position: fixed;
     top: 80px;
@@ -558,19 +581,19 @@ header {
     transform: translateY(-150%);
     transition: transform 0.4s ease;
   }
-  
+
   .nav-menu.active {
     transform: translateY(0);
   }
-  
+
   .nav-menu li {
     margin-bottom: var(--spacing-sm);
   }
-  
+
   .header-container {
     flex-wrap: wrap;
   }
-  
+
   .footer-container {
     grid-template-columns: 1fr;
   }
