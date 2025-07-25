@@ -470,3 +470,38 @@ header {
   padding-top: var(--spacing-md);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* Toast Notifications */
+.toast-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.toast.show {
+  opacity: 1;
+}
+
+.toast.success {
+  background-color: #4CAF50;
+}
+
+.toast.error {
+  background-color: #f44336;
+}
+
+/* Page Styles */
+.page-content {
+  padding: var(--spacing-xl) 0;
+}
