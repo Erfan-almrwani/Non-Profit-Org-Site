@@ -36,6 +36,45 @@
     navMenu.classList.toggle('active');
   });
 
+    // Contact Form Validation
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      if (!name || !email || !message) {
+        showToast('يرجى ملء جميع الحقول', 'error');
+        return;
+      }
+      
+      if (!validateEmail(email)) {
+        showToast('يرجى إدخال بريد إلكتروني صحيح', 'error');
+        return;
+      }
+      
+      // Simulate form submission
+      setTimeout(() => {
+        showToast('تم إرسال رسالتك بنجاح!', 'success');
+        contactForm.reset();
+      }, 1000);
+    });
+  }
+  
+  function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+ 
+
+
+
+
+
+
 
   });
   
