@@ -1,77 +1,270 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مؤسسة لاجل الجميع التنموية - الرئيسية</title>
-  <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <!-- font Awesome icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Leaflet CSS for Interactive Maps library -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <!-- File formats -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <!-- Header -->
-<header>
-  <div class="container header-container">
-    <a href="index.html" aria-label="الرئيسية">
-      <div class="logo" role="img" aria-label="شعار مؤسسة لاجل الجميع التنموية">FAF Logo</div>
-    </a>
-    
-    <button class="mobile-menu-btn" aria-label="قائمة التنقل" aria-expanded="false">
-      <i class="fas fa-bars"></i>
-    </button>
-    
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="active">الرئيسية</a></li>
-        <li><a href="about.html">من نحن</a></li>
-        <li><a href="projects.html">المشاريع</a></li>
-        <li><a href="news.html">الأخبار</a></li>
-        <li><a href="contact.html">اتصل بنا</a></li>
-      </ul>
-    </nav>
-    
-    <div class="header-controls">
-      <button id="theme-toggle" aria-label="تبديل الثيم"><i class="fas fa-moon"></i></button>
-    </div>
-  </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مؤسسة لاجل الجميع التنموية - الرئيسية</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font Awesome icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Leaflet CSS for Interactive Maps library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <!-- File formats -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <a href="index.html" aria-label="الرئيسية">
+          <div
+            class="logo"
+            role="img"
+            aria-label="شعار مؤسسة لاجل الجميع التنموية"
+          >
+            FAF Logo
+          </div>
+        </a>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <p>Hero Section</p>
-  </section>
+        <button
+          class="mobile-menu-btn"
+          aria-label="قائمة التنقل"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
 
-  <!-- About Section -->
-  <section class="about fade-in">
-    <p>About Section</p>
-  </section>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="about.html">من نحن</a></li>
+            <li><a href="projects.html">المشاريع</a></li>
+            <li><a href="news.html">الأخبار</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </nav>
 
-  <!-- Projects Section -->
-  <section class="projects fade-in">
-    <p>Projects Section</p>
-  </section>
+        <div class="header-controls">
+          <button id="theme-toggle" aria-label="تبديل الثيم">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </header>
 
-  <!-- News Section -->
-  <section class="news fade-in">
-    <p>News Section</p>
-  </section>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>مرحبًا بكم في <span>مؤسسة لاجل الجميع التنموية</span></h1>
+        <p>
+          مؤسسة غير حكومية وغير ربحية تعمل من أجل التنمية الاجتماعية للفئات
+          الأكثر ضعفاً والأقل حظاً في اليمن
+        </p>
+        <a href="projects.html" class="btn">تعرّف على مشاريعنا</a>
+      </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="about fade-in">
+      <div class="container">
+        <h2 class="section-title">من نحن</h2>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 جميع الحقوق محفوظة</p>
-  </footer>
+        <div class="about-grid">
+          <div class="vision-card">
+            <h3>رؤيتنا</h3>
+            <p>مجتمع قادر على التنمية بالمشاركة</p>
+          </div>
 
- 
+          <div class="mission-card">
+            <h3>رسالتنا</h3>
+            <p>
+              نحن كمؤسسة للجميع من أجل التنمية نهتم بتنمية الفرد كركيزة أساسية
+              في بناء مجتمع فاعل لتحقيق أهداف التنمية المستدامة والتي تستهدف
+              بشكل رئيسي الشباب والنساء والأطفال في الجمهورية اليمنية.
+            </p>
+          </div>
 
-  <!-- Scripts -->
-  <!-- Leaflet JS library for interactive maps -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="js/script.js"></script>
-</body>
+          <div class="values-card">
+            <h3>قيمنا</h3>
+            <ul>
+              <li>الشفافية</li>
+              <li>المشاركة المجتمعية</li>
+              <li>التمكين</li>
+              <li>الاستدامة</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects fade-in">
+      <div class="container">
+        <h2 class="section-title">أبرز المشاريع</h2>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-img"><i class="fas fa-briefcase"></i></div>
+            <div class="project-content">
+              <h3>برنامج خلق فرص العمل</h3>
+              <p>
+                يهدف البرنامج إلى تأهيل الشباب والنساء في عدة مجالات زراعية ضمن
+                برنامج النخبة وخلق فرص عمل للشباب والنساء
+              </p>
+              <a href="projects.html" class="btn">عرض التفاصيل</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img"><i class="fas fa-fish"></i></div>
+            <div class="project-content">
+              <h3>برنامج دعم وتأهيل الصيادين</h3>
+              <p>
+                يهدف البرنامج إلى إعادة تأهيل الصيادين الذين تضررت معداتهم أثناء
+                الحرب في عدن.
+              </p>
+              <a href="projects.html" class="btn">عرض التفاصيل</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img"><i class="fas fa-seedling"></i></div>
+            <div class="project-content">
+              <h3>برنامج دعم سبل العيش والأمن الغذائي</h3>
+              <p>
+                يهدف البرنامج إلى تمكين الشباب والنساء اقتصاديًا من خلال
+                المبادرات الاجتماعية.
+              </p>
+              <a href="projects.html" class="btn">عرض التفاصيل</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news fade-in">
+      <div class="container">
+        <h2 class="section-title">آخر الأخبار</h2>
+
+        <div class="news-grid">
+          <article class="news-item">
+            <div class="news-img"><i class="fas fa-newspaper"></i></div>
+            <div class="news-content">
+              <h3>إطلاق مشروع دعم الصيادين في عدن</h3>
+              <p>
+                أطلقت المؤسسة مشروعاً لدعم الصيادين المتضررين في محافظة عدن...
+              </p>
+              <a href="news.html" class="btn">اقرأ المزيد</a>
+            </div>
+          </article>
+
+          <article class="news-item">
+            <div class="news-img"><i class="fas fa-users"></i></div>
+            <div class="news-content">
+              <h3>ورشة عمل لتمكين المرأة الريفية</h3>
+              <p>
+                نظمت المؤسسة ورشة عمل لتمكين المرأة الريفية في مجال الزراعة
+                المستدامة...
+              </p>
+              <a href="news.html" class="btn">اقرأ المزيد</a>
+            </div>
+          </article>
+
+          <article class="news-item">
+            <div class="news-img"><i class="fas fa-graduation-cap"></i></div>
+            <div class="news-content">
+              <h3>تخريج دفعة جديدة من برنامج النخبة</h3>
+              <p>
+                احتفلت المؤسسة بتخريج الدفعة الخامسة من برنامج النخبة لتدريب
+                الشباب...
+              </p>
+              <a href="news.html" class="btn">اقرأ المزيد</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section fade-in">
+      <div class="container">
+        <h2 class="section-title">مواقع مشاريعنا</h2>
+        <div id="map"></div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <div
+              class="logo"
+              role="img"
+              aria-label="شعار مؤسسة لاجل الجميع التنموية"
+            >
+              FAF Logo
+            </div>
+            <p>
+              مؤسسة غير حكومية وغير ربحية تعمل من أجل التنمية الاجتماعية في
+              اليمن
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="فيسبوك"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="إنستغرام"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="لينكدإن"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h3>روابط سريعة</h3>
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">من نحن</a>
+            <a href="projects.html">المشاريع</a>
+            <a href="news.html">الأخبار</a>
+            <a href="contact.html">اتصل بنا</a>
+          </div>
+
+          <div class="footer-links">
+            <h3>تواصل معنا</h3>
+            <p><i class="fas fa-mobile-alt"></i> موبايل: +967 775588533</p>
+            <p><i class="fas fa-phone"></i> الهاتف: 02 272517</p>
+            <p>
+              <i class="fas fa-envelope"></i> الإيميل: forall.yemen@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            حقوق النشر &copy; <span id="year"></span> مؤسسة من اجل الجميع عدن
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div class="toast-container"></div>
+    <!-- Scripts -->
+    <!-- Leaflet JS library for interactive maps -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
